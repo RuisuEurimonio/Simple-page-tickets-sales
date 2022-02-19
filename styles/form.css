@@ -45,7 +45,7 @@ div.confirmation{
     background-color: var(--color-pink);
     border-radius: 1em;
     opacity: 0.8;
-    transition: 4s;
+    transition: 2s;
 }
 
 div.confirmation h3{
@@ -134,22 +134,12 @@ div.confirmation h3{
 
 /* for JavaScript and validation */
 
-.invalid{
-    outline: none;
-    border-color: #CC6666 ;
-}
-
-.valid{
-    outline: none;
-    border-color: #98FF98;
-}
-
 .visible{
     right: 1em;
-    transition: 4s;
+    transition: 1s;
 }
 
 .invisible{
-    right: -1000em;
-    transition: 4s;
+    right: -300em;
+    transition: 1s;
 }
