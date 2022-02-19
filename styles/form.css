@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* variable for the colors with the global scope with ":root" */
+:root{
+    --color-light-pink: #FDC5F5;
+    --color-pink: #F7AEF8;
+    --color-purple: #B388EB;
+    --color-blue: #8093F1;
+    --color-light-blue: #72DDF7;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-blue);
+}
+
+div.mark{
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+    border: .2em solid var(--color-light-pink);
+    padding: .4em;
+    border-radius: .6em;
+    background-color: var(--color-pink);
+    opacity: 0.3;
+}
+
+div.mark h3{
+    font-size:1.1em;
+}
+
+.container{
+    padding: 2em;
+    border: .2em solid #0d0d0d;
+    border-radius: 3em;
+    box-shadow: 0 0 15em 15em var(--color-purple);
+    background-color: #F7AEF8;
+}
+
+.subcontainer{
+    width: 100%;
+    height: 100%;
+}
+
+.subcontainer h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+.subcontainer hr{
+    border-color: var(--color-blue);
+    
+}
+
+.subcontainer ul{
+    margin: .6em auto;
+    width: 80%;
+}
+
+.subcontainer ul form li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: .3em auto;
+}
+
+.subcontainer ul form li label{
+    font-size: 1.2em;
+}
+
+.subcontainer ul form li input{
+    margin: auto;
+    width: 80%;
+    border: .2em solid var(--color-light-pink);
+    border-radius: .5em;
+    padding: .3em;
+    transition: .2s;
+}
+
+.subcontainer ul form li input:active,
+.subcontainer ul form li input:focus {
+    transition: .3s;
+    transform: scaleX(1.02);
+    border-color: var(--color-light-blue);
+    outline: none;
+}
+
+.subcontainer ul form button{
+    margin: .3em auto;
+    width: 8em;
+    height: 2em;
+    background-color:var(--color-light-blue);
+    border: .2em solid #0d0d0d;
+    border-radius: .6em;
+    transition: .4s;
+}
+
+.subcontainer ul form button:hover{
+    transition: .6s;
+    box-shadow: .1em .3em .5em 0 var(--color-blue);
+    background-color: var(--color-blue);
+    transform: scale(1.03, 1.03);
+    cursor: pointer;
+}
+
+.subcontainer ul form button:active{
+    transition: .1s;
+    box-shadow: .1em .2em .4em 0 var(--color-blue);
+    transform: scale(0.95, 0.95);
+}
+
+
+
+
+

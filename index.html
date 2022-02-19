@@ -4,42 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/form.css" type="text/css" rel="stylesheet" />
     <title>Tickets</title>
 </head>
 <body>
+    <div class="mark">
+        <h3> Ruisu Eurimonio. </h3>
+    </div>
     <div class="container">
         <div class="subcontainer">
             <h2> Reserva tu ticket. </h2>
+            <hr>
             <ul>
-                <li>
-                    <label for="cityOrigin"> Ciudad de origen. </label>
-                    <input type="text" id="cityOrigin" name="cityOrigin"/>
-                </li>
-                <li>
-                    <label for="cityDestiny"> Ciudad de destino. </label>
-                    <input type="text" id="cityDestiny" name="cityDestiny"/>
-                </li>
-                <li>
-                    <label for="date"> Fecha. </label>
-                    <input type="date" id="date" name="date"/>
-                </li>
-                <li>
-                    <label for="hour"> Hora. </label>
-                    <input type="time" id="hour" name="hour"/>
-                </li>
-                <li>
-                    <label for="placeNumber"> Cantidad de puestos. </label>
-                    <input type="number" id="placeNumber" name="placeNumber"/>
-                </li>
-                <li>
-                    <label for="identification"> Cédula. </label>
-                    <input type="texy" id="identification" name="identification">
-                </li>
-                <li>
-                    <label for="name"> Nombre. </label>
-                    <input type="text" id="name" name="name">
-                </li>
+                <form>
+                    <li>
+                        <label for="cityOrigin"> Ciudad de origen: </label>
+                        <input type="text" id="cityOrigin" name="cityOrigin"/>
+                    </li>
+                    <li>
+                        <label for="cityDestiny"> Ciudad de destino: </label>
+                        <input type="text" id="cityDestiny" name="cityDestiny"/>
+                    </li>
+                    <li>
+                        <label for="date"> Fecha: </label>
+                        <input type="date" id="date" name="date"/>
+                    </li>
+                    <li>
+                        <label for="hour"> Hora: </label>
+                        <input type="time" id="hour" name="hour"/>
+                    </li>
+                    <li>
+                        <label for="placeNumber"> Cantidad de puestos: </label>
+                        <input type="number" id="placeNumber" name="placeNumber"/>
+                    </li>
+                    <li>
+                        <label for="identification"> Cédula: </label>
+                        <input type="texy" id="identification" name="identification">
+                    </li>
+                    <li>
+                        <label for="name"> Nombre: </label>
+                        <input type="text" id="name" name="name">
+                    </li>
+                    <li>
+                        <button type="button" id="sendInfo"> Enviar. </button>
+                    </li>
+                </form>
             </ul>
+            <hr>
         </div>
     </div>
 </body>
