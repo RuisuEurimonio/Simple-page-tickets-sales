@@ -19,6 +19,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: var(--color-blue);
+    overflow: hidden;
 }
 
 div.mark{
@@ -34,6 +35,21 @@ div.mark{
 
 div.mark h3{
     font-size:1.1em;
+}
+
+div.confirmation{
+    position:absolute;
+    top: 5em;
+    padding: .5em;
+    border: .2em solid var(--color-light-pink);
+    background-color: var(--color-pink);
+    border-radius: 1em;
+    opacity: 0.8;
+    transition: 4s;
+}
+
+div.confirmation h3{
+    font-size: 1.2em;
 }
 
 .container{
@@ -116,7 +132,24 @@ div.mark h3{
     transform: scale(0.95, 0.95);
 }
 
+/* for JavaScript and validation */
 
+.invalid{
+    outline: none;
+    border-color: #CC6666 ;
+}
 
+.valid{
+    outline: none;
+    border-color: #98FF98;
+}
 
+.visible{
+    right: 1em;
+    transition: 4s;
+}
 
+.invisible{
+    right: -1000em;
+    transition: 4s;
+}
